@@ -1,0 +1,9 @@
+{
+  "folder-1": [
+    "foo.mp3",
+    "bar.mp3"
+  ],
+  "folder-2": [
+    "baz.mp3"
+  ]
+}
