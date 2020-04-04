@@ -9,7 +9,8 @@ const Wrapper = styled.div`
   p-4
   rounded
   border
-  border-white`}
+  border-white
+  cursor-pointer`}
   ${(props) => props.isPlaying && tw`bg-white text-wikiwars-blue`}
 `;
 

@@ -17,6 +17,3 @@ export const getSounds = () => {
   });
   return list;
 };
-
-export const getRandomColor = (seed) =>
-  Math.floor(Math.abs(Math.sin(seed) * 16777215) % 16777215).toString(16);
