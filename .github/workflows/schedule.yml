@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Renovate
-        uses: vidavidorra/github-action-renovate@v1.0.51
+        uses: vidavidorra/github-action-renovate@v1.0.5
         with:
           configurationFile: renovate.config.js
           token: ${{ secrets.RENOVATE_TOKEN }}
