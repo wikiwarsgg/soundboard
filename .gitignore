@@ -32,5 +32,6 @@ yarn-error.log*
 .vscode
 
 # Custom
-public/assets
-assets/sounds.json
+renderer/public/assets
+renderer/assets/sounds.json
+main

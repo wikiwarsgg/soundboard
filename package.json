@@ -1,13 +1,24 @@
 {
-  "name": "@wikiwars/app",
+  "name": "wikiwars-soundboard",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Julien Tanay",
+    "email": "julien@wikiwars.gg",
+    "url": "https://wikiwars.gg"
+  },
+  "main": "main/index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "build-electron": "tsc -p electron-src",
+    "build-renderer": "next build renderer && next export renderer",
+    "build": "yarn build-renderer && yarn build-electron",
+    "clean": "rimraf dist main renderer/out renderer/.next",
+    "dev": "electron .",
+    "dist": "yarn build && electron-builder",
+    "pack-app": "yarn build && electron-builder --dir",
     "precommit": "lint-staged",
-    "start": "next start",
-    "test": "jest || echo 0"
+    "test": "jest --passWithNoTests",
+    "type-check": "tsc"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.28",
@@ -15,6 +26,8 @@
     "@fortawesome/free-solid-svg-icons": "5.13.0",
     "@fortawesome/react-fontawesome": "0.1.9",
     "dotenv": "8.2.0",
+    "electron-is-dev": "1.2.0",
+    "electron-next": "3.1.5",
     "next": "9.3.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -41,6 +54,8 @@
     "@types/react": "16.9.31",
     "babel-plugin-macros": "2.8.0",
     "conventional-changelog-gitmoji": "0.2.5",
+    "electron": "8.2.1",
+    "electron-builder": "22.4.0",
     "husky": "4.2.3",
     "jest": "25.1.0",
     "lerna": "3.20.2",
@@ -50,5 +65,12 @@
     "ts-node-dev": "1.0.0-pre.44",
     "twin.macro": "1.0.0-alpha.8",
     "typescript": "3.8.3"
+  },
+  "build": {
+    "asar": true,
+    "files": [
+      "main",
+      "renderer/out"
+    ]
   }
 }
