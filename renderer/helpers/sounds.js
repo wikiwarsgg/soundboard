@@ -1,4 +1,10 @@
-import sounds from "../assets/sounds.json";
+let sounds = {};
+
+try {
+  sounds = require("../assets/sounds.json");
+} catch (e) {
+  console.warn("No sounds JSON detected.");
+}
 
 export const getCategories = () => {
   return Object.keys(sounds);
