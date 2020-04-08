@@ -10,7 +10,7 @@ export const getSounds = () => {
     v.map((e) => {
       list.push({
         name: e.replace(".mp3", ""),
-        url: `/assets/${k}/${e}`,
+        url: `assets/${k}/${e}`,
         category: k,
       });
     });

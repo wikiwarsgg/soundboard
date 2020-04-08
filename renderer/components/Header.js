@@ -13,6 +13,6 @@ const Logo = tw.img`
 
 export default () => (
   <Wrapper>
-    <Logo src="/logo.png" />
+    <Logo src="logo.png" />
   </Wrapper>
 );

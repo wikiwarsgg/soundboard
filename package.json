@@ -7,6 +7,7 @@
     "email": "julien@wikiwars.gg",
     "url": "https://wikiwars.gg"
   },
+  "description": "Wikiwars SoundBoard App",
   "main": "main/index.js",
   "scripts": {
     "build-electron": "tsc -p electron-src",
@@ -67,10 +68,18 @@
     "typescript": "3.8.3"
   },
   "build": {
-    "asar": true,
+    "appId": "gg.wikiwars.soundboard",
     "files": [
       "main",
       "renderer/out"
-    ]
+    ],
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "main/public/icons/mac.icns",
+      "darkModeSupport": true,
+      "extendInfo": {
+        "LSUIElement": 1
+      }
+    }
   }
 }
