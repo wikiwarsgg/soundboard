@@ -7,6 +7,7 @@ module.exports = {
   ],
   commitMessagePrefix: "⬆️",
   platform: "github",
+  onboarding: false,
+  requireConfig: false,
   repositories: ["wikiwarsgg/soundboard"],
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
 };
