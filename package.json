@@ -32,7 +32,7 @@
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-konami-code": "1.4.2",
+    "react-konami-code": "1.4.3",
     "react-player": "1.15.3"
   },
   "husky": {
