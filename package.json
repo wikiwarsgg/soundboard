@@ -55,7 +55,7 @@
     "@types/react": "16.9.41",
     "babel-plugin-macros": "2.8.0",
     "conventional-changelog-gitmoji": "0.2.5",
-    "electron": "9.1.0",
+    "electron": "9.1.2",
     "electron-builder": "22.5.1",
     "husky": "4.2.5",
     "jest": "25.5.4",
