@@ -52,7 +52,7 @@
     "@emotion/core": "10.0.35",
     "@emotion/styled": "10.0.27",
     "@types/node": "13.13.15",
-    "@types/react": "16.9.41",
+    "@types/react": "16.9.49",
     "babel-plugin-macros": "2.8.0",
     "conventional-changelog-gitmoji": "0.2.5",
     "electron": "9.1.2",
