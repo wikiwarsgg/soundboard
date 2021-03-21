@@ -22,7 +22,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.34",
+    "@fortawesome/fontawesome-svg-core": "1.2.35",
     "@fortawesome/free-brands-svg-icons": "5.13.1",
     "@fortawesome/free-solid-svg-icons": "5.13.1",
     "@fortawesome/react-fontawesome": "0.1.14",
