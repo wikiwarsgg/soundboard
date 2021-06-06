@@ -30,8 +30,8 @@
     "electron-is-dev": "1.2.0",
     "electron-next": "3.1.5",
     "next": "9.3.6",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
     "react-konami-code": "1.4.3",
     "react-player": "2.5.0"
   },
